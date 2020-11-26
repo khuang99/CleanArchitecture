@@ -18,6 +18,7 @@ namespace CleanArchitecture.WebUI.Controllers
         public async Task<ActionResult<PaginatedList<TodoItemDto>>> GetTodoItemsWithPagination([FromQuery] GetTodoItemsWithPaginationQuery query)
         {
             return await Mediator.Send(query);
+            
         }
 
         [HttpPost]
